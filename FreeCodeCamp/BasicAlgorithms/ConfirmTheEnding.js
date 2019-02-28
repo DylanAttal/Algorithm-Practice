@@ -6,5 +6,3 @@ purpose of this challenge, we would like you to use one of the JavaScript substr
 function confirmEnding(str, target) {
   return str.slice(str.length - target.length) === target 
 }
-
-confirmEnding("Bastian", "n");
