@@ -11,5 +11,5 @@ validPhoneNumber("(1111)555 2345")  => returns false
 validPhoneNumber("(098) 123 4567")  => returns false */
 
 function validPhoneNumber(phoneNumber) {
-  return phoneNumber.match(/^[(]\d+[)]\s\d+[-]\d+$/) ? true : false
+  return (/^[(]\d{3}[)]\s\d{3}[-]\d{4}$/).test(phoneNumber)
 }
